@@ -1,7 +1,7 @@
 * {
     font-family: sans-serif;
-    margin: 0;
-    padding: 0;
+ /*   margin: 0;
+    padding: 0;*/
 }
 
 .header {
@@ -26,6 +26,69 @@
 .header__content__text {
     border: 1px solid lightseagreen;
     margin-top: 50px;
+    margin-bottom: 200px;
+}
+
+.body {
+    border: 1px solid purple;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.body__content {
+    border: 1px solid green;
+    margin-bottom: 10px;
+}
+
+.body__content__part1 {
+    border: 1px solid #000;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.market {
+    border: 1px solid red;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.contact_info {
+    border: 1px solid green;
+    margin-bottom: 100px;
+}
+
+.map {
+    border: 1px solid peru;
+    margin-bottom: 50px;
+}
+
+.footer {
+    border: 1px solid red;
+}
+
+.footer__top {
+    border: 1px solid black;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.footer__top__text {
+    border: 1px solid green;
+    border-top: 50px;
+    margin-bottom: 50px;
+}
+
+.footer__bottom {
+    border: 1px solid #000;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.footer__bottom__copyright {
+    border: 1px solid green;
+    margin-bottom: 20px;
 }
 
 /************************* --Прошлые таски-- ***********************/

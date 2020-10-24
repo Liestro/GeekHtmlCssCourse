@@ -9,66 +9,98 @@
 </head>
 
 <body>
-    <!-- Шапка сайта -->
-    <a href="index.html">Главная</a>
-    <a href="Contacts.html">Контакты</a>
-    <!-- ----------------------------------- -->
+    <div class="header">
+        <div class="header__content">
+            <!-- Шапка сайта -->
+            <div class="menu">
+                <a href="index.html">Главная</a>
+                <a href="Contacts.html">Контакты</a>
+            </div>
 
-    <h2 class="heading_2">Contact Us</h2>
-    <p class="paragraph">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, voluptates?
-    </p>
-    <img src="img/star.jpg" alt="star">
+            <h2 class="heading_2">Contact Us</h2>
+            <p class="paragraph">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique, voluptates?
+            </p>
+        </div>
+    </div>
 
-    <h4 class="heading_4">Address</h4>
-    <p class="paragraph">
-        Lorem ipsum dolor, sit amet consectetur adipisicing.
-    </p>
+    <div class="body">
+        <div class="contact_info">
+            <table>
+                <tr>
+                    <td>
+                        <img src="img/star.jpg" alt="star">
 
-    <h4 class="heading_4">Phone</h4>
-    <ul>
-        <li>+7(912)345-67-89</li>
-        <li>+7(912)123-45-67</li>
-    </ul>
+                        <h4 class="heading_4">Address</h4>
+                        <p class="paragraph">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing.
+                        </p>
 
-    <h4 class="heading_4">Online service</h4>
-    <ul>
-        <li>
-            <a href="https://geekbrains.ru/">Сайт</a>
-        </li>
-        <li>
-            <a href="mailto:andrey.istomin511@gmail.com">address@mail.ru</a>
-        </li>
-    </ul>
+                        <h4 class="heading_4">Phone</h4>
+                        <ul>
+                            <li>+7(912)345-67-89</li>
+                            <li>+7(912)123-45-67</li>
+                        </ul>
 
-    <h4 class="heading_4">Send us message</h4>
-    <form action="#">
-        <label for="nameinput">Full Name</label>
-        <input class="input_text" id="nameinput" type="text" placeholder="Your Name"> <br>
-        <label for="emailinput">Email</label>
-        <input class="input_text" id="emailinput" type="email" placeholder="Email@mail.ru"> <br>
-        <label for="messageinput">Message</label> <br>
-        <textarea class="input_text" name="message" id="messageinput" cols="30" rows="10"></textarea> <br>
-        <button class="button" type="submit">Submit</button>
-    </form>
+                        <h4 class="heading_4">Online service</h4>
+                        <ul>
+                            <li>
+                                <a href="https://geekbrains.ru/">Сайт</a>
+                            </li>
+                            <li>
+                                <a href="mailto:andrey.istomin511@gmail.com">address@mail.ru</a>
+                            </li>
+                        </ul>
+                    </td>
+                    <td>
+                        <h4 class="heading_4">Send us message</h4>
+                        <form action="#">
+                            <label for="nameinput">Full Name</label>
+                            <input class="input_text" id="nameinput" type="text" placeholder="Your Name"> <br>
+                            <label for="emailinput">Email</label>
+                            <input class="input_text" id="emailinput" type="email" placeholder="Email@mail.ru"> <br>
+                            <label for="messageinput">Message</label> <br>
+                            <textarea class="input_text" name="message" id="messageinput" cols="30"
+                                rows="10"></textarea> <br>
+                            <button class="button" type="submit">Submit</button>
+                        </form>
+                    </td>
+                </tr>
+            </table>
+        </div>
 
-    <script type="text/javascript" charset="utf-8" async
-        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3189e32d74c49ce217853705750837a325fb64c508c934bf4b061f5c8a5471c7&amp;width=500&amp;height=400&amp;lang=ru_UA&amp;scroll=true">
-        </script>
+        <div class="map">
+            <script type="text/javascript" charset="utf-8" async
+                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3189e32d74c49ce217853705750837a325fb64c508c934bf4b061f5c8a5471c7&amp;width=500&amp;height=400&amp;lang=ru_UA&amp;scroll=true">
+                </script>
+        </div>
+    </div>
 
     <!-- Подвал сайта -->
-    <h3 class="heading_3">Подвал сайта</h3>
-    <p class="paragraph">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, eius?
-    </p>
-    <hr>
-    <ul>
-        <li>Lorem ipsum dolor word sit amet.</li>
-        <li>+7(912)123-45-67</li>
-        <li id="ourEmail">address@mail.ru</li>
-    </ul>
+    <div class="footer">
+        <div class="footer__top">
+            <div class="footer__top__text">
+                <h3 class="heading_3">Подвал сайта</h3>
+                <p class="paragraph">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, eius?
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div class="footer__bottom">
+            <ul>
+                <li>Lorem ipsum dolor word sit amet.</li>
+                <li>+7(912)123-45-67</li>
+                <li id="ourEmail">address@mail.ru</li>
+            </ul>
 
-    <p class="paragraph">Все права защищены</p>
+            <div class="footer__bottom__copyright">
+                <p class="paragraph">
+                    Все права защищены
+                </p>
+            </div>
+        </div>
+    </div>
     <!-- ---------------------------------- -->
 </body>
 
