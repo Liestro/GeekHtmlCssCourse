@@ -1,7 +1,12 @@
 * {
     font-family: sans-serif;
- /*   margin: 0;
-    padding: 0;*/
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .header {
@@ -10,85 +15,86 @@
 
 .header__content {
     border: 1px solid purple;
-    margin-left: 100px;
-    margin-right: 100px;
+}
+
+.header__content__text {
+    display: block;
+    width: 425px;
 }
 
 .menu {
     border: 1px solid green;
-    margin-top: 20px;
-    padding-top: 5px;
-    padding-bottom: 3px;
+    display: flex;
+    justify-content: space-between;
 }
 
-/*Здесь нужно перенести ссылку Контакты вправо*/
-
-.header__content__text {
-    border: 1px solid lightseagreen;
-    margin-top: 50px;
-    margin-bottom: 200px;
+.contacts_content {
+    border: 1px solid #000;
+    display: flex;
+    justify-content: space-around
 }
 
 .body {
     border: 1px solid purple;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    margin-left: 100px;
-    margin-right: 100px;
 }
 
 .body__content {
     border: 1px solid green;
-    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
 }
 
-.body__content__part1 {
+.body__content__cart {
     border: 1px solid #000;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    width: 359px;
 }
 
 .market {
     border: 1px solid red;
-    margin-left: 100px;
-    margin-right: 100px;
 }
 
 .contact_info {
     border: 1px solid green;
-    margin-bottom: 100px;
 }
 
 .map {
     border: 1px solid peru;
-    margin-bottom: 50px;
 }
 
 .footer {
     border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .footer__top {
     border: 1px solid black;
-    margin-left: 100px;
-    margin-right: 100px;
+    width: 495px;
 }
 
 .footer__top__text {
     border: 1px solid green;
-    border-top: 50px;
-    margin-bottom: 50px;
+}
+
+.footer__top__text__heading_3 {
+    display: block;
+    width: 340px;
+    text-align: left;
 }
 
 .footer__bottom {
     border: 1px solid #000;
-    margin-left: 100px;
-    margin-right: 100px;
+}
+
+.footer__bottom__contacts {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
 }
 
 .footer__bottom__copyright {
     border: 1px solid green;
-    margin-bottom: 20px;
 }
 
 /************************* --Прошлые таски-- ***********************/
@@ -101,6 +107,8 @@
 .heading_1 {
     font-size: 64px;
     color: #1F3F68;
+    display: block;
+    width: 510px;
 }
 
 .heading_2 {
@@ -111,7 +119,6 @@
 
 .heading_3 {
     font-size: 36px;
-    text-align: center;
 }
 
 .heading_4 {
