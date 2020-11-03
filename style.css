@@ -134,6 +134,7 @@
 
 .market__little_img_box__text {
     position: absolute;
+    text-align: left;
     top: 32px;
     left: 32px;
     font-size: 28px;
@@ -151,14 +152,16 @@
 }
 
 .footer {
-    margin-top: 80px;
+    margin-top: 112px;
+    padding-top: 91px;
+    padding-bottom: 64px;
     background: #316099;
 }
 
 .footer__top {
     display: flex;
     justify-content: space-between;
-    padding-top: 91px;
+    align-items: center;
     padding-bottom: 96px;
 }
 
@@ -172,14 +175,12 @@
     background: #5A98D0;
     display: inline-block;
     padding: 15px 80px;
-    margin-top: 74px;
 } 
 
 .footer__bottom__contacts {
     list-style-type: none;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 64px;
     margin-top: 64px;
 }
 
@@ -188,10 +189,28 @@
     line-height: 26px;
     letter-spacing: 0.05em;
     color: #FFFFFF;
+    flex-grow: 1;
+    flex-basis: 33.333333%;
+    display: flex;
+    margin-right: 32px;
 }
 
-.footer__bottom__copyright {
-    padding-bottom: 64px;
+.footer__contacts__item:first-child::before {
+    content: 'A.';
+    display: block;
+    margin-right: 16px;
+}
+
+.footer__contacts__item:nth-child(2)::before {
+    content: 'T.';
+    display: block;
+    margin-right: 16px;
+}
+
+.footer__contacts__item:nth-child(3)::before {
+    content: 'E.';
+    display: block;
+    margin-right: 16px;
 }
 
 .paragraph {
@@ -216,6 +235,10 @@
     margin-top: 32px;
     display: block;
     width: 495px;
+}
+
+.footer__bottom__copyright {
+    margin-top: 64px;
 }
 
 .footer__text__copyright {
