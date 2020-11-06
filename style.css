@@ -139,12 +139,34 @@
     font-size: 28px;
 }
 
+.contacts_header {
+    padding-bottom: 57px;
+}
+
+.contacts_header__content {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 54px;
+    background-image: url(img/contacts_top_back.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacts_body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .contact_info {
     border: 1px solid green;
 }
 
 .map {
-    border: 1px solid peru;
+    padding-top: 96px;
 }
 
 .footer {
@@ -217,6 +239,16 @@
     opacity: 0.6;
 }
 
+.contacts_header__text {
+    margin-top: 16px;
+    max-width: 780px;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
 .market__text {
     width: 75%;
     margin: 32px auto 64px;
@@ -251,10 +283,13 @@
     margin-bottom: 32px;
 }
 
-.heading_2 {
+.heading_contacts {
     font-weight: 500;
     font-size: 44px;
+    line-height: 74px;
     text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
 }
 
 .heading_3 {
