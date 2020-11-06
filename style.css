@@ -477,11 +477,19 @@
         flex-direction: column;
     }
 
+    .footer__top__text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .footer__top__text__heading_3 {
+        width: 75%;
         text-align: center;
     }
 
     .footer__text {
+        width: 100%;
         text-align: center;
     }
 
