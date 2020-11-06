@@ -10,7 +10,7 @@
 }
 
 .header {
-    height: 768px;
+    min-height: 768px;
     background: linear-gradient(0deg, #EBF3FB 8.84%, rgba(152, 195, 232, 0) 31.12%);
 }
 
@@ -22,10 +22,12 @@
 
 .header__content {
     padding-top: 115px;
+    padding-bottom: 50px;
     flex-grow: 1;
     background-image: url(img/top__back.png);
     background-repeat: no-repeat;
     background-position: right center;
+    background-size: 44%;
 }
 
 .header__content__text {
@@ -93,8 +95,6 @@
 }
 
 .card__link {
-    margin-top: 30px;
-    margin-bottom: 44px;
     font-size: 14px;
     line-height: 30px;
     letter-spacing: 0.05em;
@@ -133,14 +133,10 @@
 }
 
 .market__little_img_box__text {
-    position: absolute;
     text-align: left;
     top: 32px;
     left: 32px;
     font-size: 28px;
-    line-height: 46px;
-    letter-spacing: 0.05em;
-    color: #FFFFFF;
 }
 
 .contact_info {
@@ -227,7 +223,6 @@
     color: #222222;
     opacity: 1;
     text-align: center;
-    padding-top: 32px;
 }
 
 .footer__text {
@@ -301,4 +296,107 @@
     text-align: center;
     color: #FFFFFF;
     text-transform: uppercase;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .header__content {
+        background-position: right 280px;
+    }
+    
+    .body__cardbox {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .body__card {
+        margin-bottom: 32px;
+    }
+}
+
+@media (max-width: 667px) {
+    .header {
+        min-height: 376px;
+        padding-bottom: 41px;
+        box-sizing: border-box;
+    }
+
+    .menu {
+        padding-top: 24px;
+    }
+
+    .header__content {
+        padding-top: 36px;
+        background: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center
+    }
+
+    .header__button {
+        font-size: 12px;
+        line-height: 26px;
+        padding: 0 8px;
+        margin-top: 32px;
+    }
+
+    .body {
+        padding-top: 48px;
+    }
+
+    .body__cardbox {
+        padding-top: 32px;
+    }
+
+    .body__card {
+        width: 100%;
+    }
+
+    .market__pictures {
+        flex-direction: column;
+        margin-top: 16px;
+    }
+
+    .market__img_box_margin {
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+
+    .heading_1 {
+        width: 100%;
+        font-size: 32px;
+        line-height: 37px;
+        margin-bottom: 12px;
+        text-align: center;
+    }
+
+    .heading_3 {
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: normal;
+    }
+
+    .header__content__text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .market__text {
+        width: 100%;
+    }
+
+    .market__img_box__text {
+        font-size: 16px;
+        line-height: 19px;
+        top: 16px;
+        right: 16px;
+    }
+
+    .market__little_img_box__text {
+        left: 16px;
+    }
 }
